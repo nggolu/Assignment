@@ -1,18 +1,16 @@
+package service;
 
-package controller;
-
-import model.Item;
 /**
- * It calculate the tax of every type
+ * It calculate the tax for every type
+ * 
  * @author nishantgarg
  */
 public interface TaxCalculate {
-	/** 
-	 * @param price - {@link double}
+	/**
+	 * @param price
+	 *            - {@link double}
 	 * @return tax + price - {@link Double}
 	 * 
 	 */
-
 	double calculate(double price);
-
 }
