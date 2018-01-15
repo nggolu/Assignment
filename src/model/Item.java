@@ -1,5 +1,16 @@
 package model;
-
+/**
+ * It contain the attributes of item 
+ * <ul>
+ * <li>&nbsp;name {@link String}</li>
+ * <li>&nbsp;price {@link Double}</li>
+ * <li>&nbsp;quantity {@link Integer}</li>
+ * <li>&nbsp;type {@link String}</li>
+ * <li>&nbsp;tax {@link Double}</li>
+ * </ul>
+ * 
+ * @author nishantgarg
+ */
 public class Item {
 	private String name;
 	private double price;
@@ -48,7 +59,6 @@ public class Item {
 	}
 
 	public boolean isValid() {
-//		if(this == null)return false;
 		if (this.name == null) {
 			System.err.println("Item name not provided!");
 			return false;
